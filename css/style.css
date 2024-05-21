@@ -73,7 +73,12 @@ footer {
 #list {
     width: 90%;
     margin: 50px auto;
+   
 }
+.list-flex{display: flex;}
+.list-wrapper{width: 100%;}
+
+#list input{width: 32px; margin-right: 32px;}
 
 #list li {
     font-size: 20px;
