@@ -30,8 +30,8 @@
         const value = localStorage.getItem(key);
         const html = `
         <li>
-          <p>${key}</p>
-          <p>${value}</p>
+          <p class='title'>${key}</p>
+          <p class='text'>${value}</p>
         </li>
       `;
         $("#list").append(html);

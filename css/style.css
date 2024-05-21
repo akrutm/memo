@@ -15,7 +15,7 @@ h1 {
     width: 90%;
     margin: 5px auto 30px;
     padding: 20px;
-    border: 1px solid #ccc;
+    border: 1px solid #ddd;
     border-radius: 10px;
 }
 
@@ -24,34 +24,42 @@ input {
     display: block;
     padding: 20px 10px;
     margin-bottom: 20px;
-    border: 1px solid #ccc;
-    font-size: 20px;
+    border: none;
+   font-size: 16px;
 }
 
 textarea {
     width: 100%;
     height: 100px;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: none;
     resize: none;
-    font-size: 20px;
+    font-size: 16px;
+    
 }
+.line{width: 100%; height: 1px; background-color: #ddd;}
 
 .button-area {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: end;
+    
 }
 
+#save{background-color: rgb(50, 81, 255); color: white;}
+#cancel{font-size: 14px;}
+
 .button-area button {
+    padding: 4px 16px;
+    margin: 8px;
     border: 1px solid #ddd;
     border-radius: 5px;
-    width: 48%;
-    height: 60px;
+    /* width: 48%; */
+    /* height: 60px; */
     text-align: center;
     display: block;
-    font-size: 20px;
+    font-size: 14px;
 }
 
 footer {
@@ -76,4 +84,9 @@ footer {
 
 #list li p {
     margin: 10px 0;
+   
+}
+
+#list li .text{
+    color: #7d7d7d;
 }
