@@ -62,9 +62,10 @@ if ($(this).is(":checked")) {
  
  const key = listItem.attr("data-key");
 
+ setTimeout(function() {
  localStorage.removeItem(key);
 
 listItem.remove();
-
+}, 500); 
 }
  });
