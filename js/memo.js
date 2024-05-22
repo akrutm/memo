@@ -1,4 +1,22 @@
 
+  // // localStorageからキーリストを取得
+  // let keyList = JSON.parse(localStorage.getItem("keyList")) || [];
+
+  // // localStorageからアイテムを取得してリストを再構築
+  // keyList.forEach(key => {
+  //     const value = localStorage.getItem(key);
+  //     const html = `
+  //         <li class="list-item" data-key="${key}">
+  //             <input type="checkbox" class="delete-checkbox">
+  //             <p>${key}</p>
+  //             <p>${value}</p>
+  //         </li>
+  //     `;
+  //     $("#list").append(html);
+  // });
+
+
+
 //1.Save クリックイベント
 
 $("#save").on("click", function () {
@@ -6,6 +24,8 @@ $("#save").on("click", function () {
   const value = $("#text").val();
 
   localStorage.setItem(key, value);
+  // keyList.push(key);
+  // localStorage.setItem("keyList", JSON.stringify(keyList));
   const html = `
      
         <li class="list-item" data-key="${key}">
@@ -21,6 +41,11 @@ $("#save").on("click", function () {
         </li>
       `;
   $("#list").append(html);
+  
+ 
+  $("#title").val('');
+  $("#text").val('');
+  console.log('input-area-clear')
 });
 
 

@@ -11,7 +11,7 @@ h1 {
     border-bottom: 1px solid #ccc;
 }
 
-.input-area {
+#input-area {
     width: 90%;
     margin: 5px auto 30px;
     padding: 20px;
@@ -76,7 +76,7 @@ footer {
    
 }
 .list-flex{display: flex;}
-.list-wrapper{width: 100%;}
+#list-wrapper{width: 100%;}
 
 #list input{width: 32px; margin-right: 32px;}
 
